@@ -18,4 +18,3 @@
 //= require jquery.smooth-scroll.min
 //= require jquery.equalheights.min
 //= require script
-//= require_tree .
