@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require fancySelect
+//= require jquery.smooth-scroll.min
+//= require jquery.equalheights.min
+//= require script
+
