@@ -317,7 +317,7 @@ body {
    NAVBAR
    ---------------------------------------------------------------------------------------- */
 #mainnav .navbar {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   border: 0;
 }
 #mainnav .navbar .navbar-header .navbar-brand {
@@ -361,9 +361,9 @@ body {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-}
+} 
 #mainnav .navbar .navbar-nav li.active a {
-  background-color: rgba(6, 150, 159, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #mainnav .navbar .navbar-nav li a {
   border: 0;
@@ -490,17 +490,18 @@ body {
   position: relative;
 }
 .section .inner .content h1 {
-  margin-bottom: 40px;
+  font-size: 120px !important;
+  font-family: 'Source Sans Pro', san-serif;
 }
 .section#home {
-  background: transparent image-url('bg1.jpg') no-repeat center center fixed;
+  background: transparent image-url('bg1.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .section#home .inner {
-  background: rgba(1, 72, 77, 0.8);
+  background: rgba(198, 71, 71, 0.9);
 }
 .section#home .inner .content {
   color: #fff;
@@ -511,10 +512,10 @@ body {
 }
 .section#home .inner .content h1 {
   font-size: 400%;
-  margin: 60px 0 45px;
+  margin: 30px 0 30px;
 }
 .section#home .inner .content h2 {
-  color: #999999;
+  color: white;
 }
 .section#home .inner .content h3 {
   font-family: 'Source Sans Pro', san-serif;
