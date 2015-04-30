@@ -672,6 +672,28 @@ body {
 .section#register .inner .btn span {
   color: #ff0;
 }
+
+/* ------------------------------------------------------------------------------------------
+   STATEMENT
+   ---------------------------------------------------------------------------------------- */
+
+.statement {
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 48px 0;
+}
+
+.statement p {
+  margin-bottom: 24px;
+}
+
+.statement p, b {
+  font-size: 24px;
+}
+
+
+
 /* ------------------------------------------------------------------------------------------
    FOOTER
    ---------------------------------------------------------------------------------------- */
@@ -895,10 +917,27 @@ div.fancy-select select:focus + div.trigger {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+
+
+.sizemic {
+  width: 1000px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
    ---------------------------------------------------------------------------------------- */
 @media all and (min-width: 280px) and (max-width: 768px) {
+
+  .statement {
+    width: 85%;
+  }
+
+  .sizemic {
+    width: 85%;
+  }
+
   #mainnav .navbar {
     background: rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s linear;
