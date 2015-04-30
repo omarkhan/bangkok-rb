@@ -304,7 +304,7 @@ a:hover {
   transition: all 0.3s linear;
 }
 body {
-  background: #ffffff url('../../img/bg3.jpg') repeat 0 0;
+  background: #ffffff image-url('bg3.jpg') repeat 0 0;
 }
 .page-header h1 {
   font-size: 45px;
@@ -493,7 +493,7 @@ body {
   margin-bottom: 40px;
 }
 .section#home {
-  background: transparent url(../../img/bg1.jpg) no-repeat center center fixed;
+  background: transparent image-url('bg1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -636,7 +636,7 @@ body {
   padding: 0 25px;
 }
 .section#register {
-  background: url(../../img/bg2.jpg) no-repeat center center fixed;
+  background: image-url('bg2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
