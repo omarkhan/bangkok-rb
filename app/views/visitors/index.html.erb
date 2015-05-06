@@ -49,7 +49,7 @@ Thats what the Ruby commmunity does!
 Ruby on Rails developers are now the highest paying development jobs in the tech industry today, and its interest is still growing.
 
 Amongst the companies use Ruby for their products are: Amazon, Twitter, Hulu, GroupOn, Shopify, Cruncbase, Bloomberg, Indiegogo, 
-Airbnb, SoundCloud, Heroku, Zendesk, GutHub... Well I think you get it already....
+Airbnb, SoundCloud, Heroku, Zendesk, GitHub... Well I think you get it already....
             </p>
             <h3>20th of May, 2015</h3>
             <h4>Bangkok, Thailand</h4>
@@ -817,42 +817,42 @@ Airbnb, SoundCloud, Heroku, Zendesk, GutHub... Well I think you get it already..
 
             <h2>Platinum Sponsors</h2>
 
-<div>
-  <a href="#">
-    <%= image_tag 'samples/logos/RedHat.png' %>
-  </a>
-  
-  <a href="#">
-    <%= image_tag 'samples/logos/Ubuntu.png' %>
-  </a>
-</div>
+            <div>
+              <a href="#">
+                <%= image_tag 'samples/logos/RedHat.png' %>
+              </a>
+              
+              <a href="#">
+                <%= image_tag 'samples/logos/Ubuntu.png' %>
+              </a>
+            </div>
 
-<hr>
+            <hr>
 
-<h2>Premium Sponsors</h2>
+            <h2>Premium Sponsors</h2>
 
-<div>
-  <a href="#">
-    <%= image_tag 'samples/logos/Google.png' %>
-  </a>
+            <div>
+              <a href="#">
+                <%= image_tag 'samples/logos/Google.png' %>
+              </a>
 
-  <a href="#">
-    <%= image_tag 'samples/logos/Rackspace.png' %>
-  </a>
+              <a href="#">
+                <%= image_tag 'samples/logos/Rackspace.png' %>
+              </a>
 
-  <a href="#">
-    <%= image_tag 'samples/logos/NewRelic.png' %>
-  </a>
+              <a href="#">
+                <%= image_tag 'samples/logos/NewRelic.png' %>
+              </a>
 
-  <a href="#">
-    <<%= image_tag 'samples/logos/Amazon.png' %>
-  </a>
+              <a href="#">
+                <<%= image_tag 'samples/logos/Amazon.png' %>
+              </a>
 
-  <a href="#">
-    <%= image_tag 'samples/logos/CloudStack.png' %>
-  </a>
-</div>          
-  </div><!-- /content -->
+              <a href="#">
+                <%= image_tag 'samples/logos/CloudStack.png' %>
+              </a>
+            </div>          
+          </div><!-- /content -->
 
         </div><!-- /inner -->
       </section><!-- /section -->
@@ -860,128 +860,82 @@ Airbnb, SoundCloud, Heroku, Zendesk, GutHub... Well I think you get it already..
       <section class="section" id="register">
         <div class="inner">
           <div class="content">
+            <div class="statement" style="color: white">
+              <h1 style="margin: 0px;">
+                Free Macbook!
+              </h1>
+              <center>
+                <h2 style="color: white; font-size: 36px; margin-bottom: 36px;">
+                  What the hell?
+                </h2>
+              </center>
+              <center>
+                <b>
+                  Yes, its true. We are giving away a <i>brand new fully specked</i> Macbook Air to you guys just for showing up.
+                </b>
+                <br><br>
+              </center>
+              <center>
+                <i style="font-size: 24px;">Yeah, right, whats the catch?</i> <br> <br>
+              </center>
+              <p>
+                No catch! Just register, and put your business card in the jar when you show up
+                and after the speakers are done we will draw out a business card (if you dont have one just put your name in a note) 
+                and that girl, or guy, walks out with a brand new Mac Air. Even we don't have that!
+              </p>
+              <p>
+                So register today, and it will be you that can show off to your friends what you won just by showing up at Ekkamai one random Wednesday!
+              </p>
+            </div>
 
-
-        <div class="statement" style="color: white">
-      
-          
-        <h1 style="margin: 0px;">
-          Free Macbook!
-        </h1>
-        <center>
-          <h2 style="color: white; font-size: 36px; margin-bottom: 36px;">
-            What the hell?
-          </h2>
-        </center>
-        <center>
-          <b>
-            Yes, its true. We are giving away a <i>brand new fully specked</i> Macbook Air to you guys just for showing up.
-          </b>
-          <br><br>
-        </center>
-        <center>
-          <i style="font-size: 24px;">Yeah, right, whats the catch?</i> <br> <br>
-        </center>
-        <p>
-          No catch! Just register, and put your business card in the jar when you show up
-          and after the speakers are done we will draw out a business card (if you dont have one just put your name in a note) 
-          and that girl, or guy, walks out with a brand new Mac Air. Even we don't have that!
-        </p>
-        <p>
-          So register today, and it will be you that can show off to your friends what you won just by showing up at Ekkamai one random Wednesday!
-        </p>
-
-
-
-        </div>
             <h1>Free Registration</h1>
-            <div class="row content">
+            <div class="row content" id="form-container">
 
-  <div class="col-lg-10 col-lg-push-1">
+              <%= form_for(@attendee, remote: true, :html => {:id => "attendenceForm"}) do |f| %>
+                <% if @attendee.errors.any? %>
+                  <div id="error_explanation">
+                    <h2><%= pluralize(@attendee.errors.count, "error") %> prohibited this attendee from being saved:</h2>
 
-    <form>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-          <input type="text" class="form-control" name="firstname" required="required" placeholder="First name">
-        </div>
+                    <ul>
+                    <% @attendee.errors.full_messages.each do |message| %>
+                      <li><%= message %></li>
+                    <% end %>
+                    </ul>
+                  </div>
+                <% end %>
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-          <input type="text" class="form-control" name="lastname" required="required" placeholder="Last name">
-        </div>
-      </div><!-- /row -->
 
-      <div class="row">
-        <div class="col-lg-12 required">
-          <input type="email" class="form-control" name="email" required="required" placeholder="Email address">
-        </div>
-      </div><!-- /row -->
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+                    <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+                  </div>
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 required">
-          <input type="text" class="form-control" name="address" required="required" placeholder="Address">
-        </div>
-      </div><!-- /row -->
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+                    <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+                  </div>
+                </div><!-- /row -->
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <input type="text" class="form-control" name="street" placeholder="Street">
-        </div>
-      </div><!-- /row -->
+                <div class="row">
+                  <div class="col-lg-12 required">
+                    <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+                  </div>
+                </div><!-- /row -->
 
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 required">
-          <input type="text" class="form-control" name="zipcode" required="required" placeholder="Zip code">
-        </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 required">
-          <input type="text" class="form-control" name="city" required="required" placeholder="City">
-        </div>
+                <hr>
+                <center>
+                  <h2 style="color: white">
+                    *Attendance is free of charge
+                  </h2>
+                </center>
 
-        <div class="col-lg-6 col-md-5 col-sm-4 col-xs-4 required">
-          <input type="text" class="form-control" name="state" required="required" placeholder="State">
-        </div>
-      </div><!-- /row -->
+                <div class="col-lg-12 required">
+                    <%= f.submit class: 'btn btn-info btn-lg btn-block' %>
+                  </div>
+                </div>
 
-      <div class="row">
-        <div class="col-lg-12 required">
-          <input type="text" class="form-control" name="country" required="required" placeholder="Country">
-        </div>
-      </div><!-- /row -->
-
-      <hr>
-      <center>
-        <h2 style="color: white">
-          *Attendance is free of charge
-        </h2>
-      </center>
-    
-<!--       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
-          <select id="ticket">
-            <option>1 Ticket</option>
-            <option>2 Tickets</option>
-            <option>3 Tickets</option>
-            <option>5 Tickets</option>
-            <option>10 Tickets</option>
-            <option>15 Tickets</option>
-            <option>20 Tickets</option>
-          </select>
-        </div> -->
-
-<!--         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8">
-          <button class="btn btn-info btn-lg btn-block">Pay Now <span>$</span><span id="totalPrice">95</span></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div><img class="pull-right" src="img/credit-cards.png" alt="Payment processor accepted"></div>
-        </div>
-      </div> -->
-    </form>
-
-  </div>
-</div>          </div><!-- /content -->
+              <% end %>
+        </div><!-- /content -->
         </div><!-- /inner -->
       </section><!-- /section -->
 
