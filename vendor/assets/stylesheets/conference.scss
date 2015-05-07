@@ -478,14 +478,22 @@ body {
   min-height: 100%;
   text-align: center;
 }
+
+.banner {
+  text-align: center;
+}
+
+.banner, .inner, #home {
+  height: 600px;
+}
+
 .section.alt {
   background-color: #f1f2f3;
 }
 .section h2 {
   margin-bottom: 45px;
 }
-.section .inner {
-  min-height: 100%;
+.banner .inner {
   padding: 70px;
   position: relative;
 }
@@ -493,41 +501,61 @@ body {
   font-size: 120px !important;
   font-family: 'Source Sans Pro', san-serif;
 }
-.section#home {
+
+.banner .inner .content h1 {
+  font-size: 120px !important;
+  font-family: 'Source Sans Pro', san-serif;
+}
+.banner#home {
   background: transparent image-url('bg1.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.section#home .inner {
+.banner#home .inner {
   background: rgba(198, 71, 71, 0.9);
 }
-.section#home .inner .content {
+.banner#home .inner .content {
   color: #fff;
   padding: 100px 0;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
-.section#home .inner .content h1 {
+.banner#home .inner .content h1 {
   font-size: 400%;
   margin: 30px 0 30px;
 }
-.section#home .inner .content h2 {
+.banner#home .inner .content h2 {
   color: white;
 }
-.section#home .inner .content h3 {
+.banner#home .inner .content h3 {
   font-family: 'Source Sans Pro', san-serif;
   font-weight: 400;
 }
-.section#home .inner .content h4 {
+.banner#home .inner .content h4 {
   font-weight: 400;
   margin-bottom: 40px;
 }
-.section#home .inner .content .btn {
+.banner#home .inner .content .btn {
   margin-bottom: 20px;
 }
+
+.platinum-sponsors {
+  text-align: center;
+  padding: 60px 40px 0 40px;
+} 
+
+.platinum-sponsors a {
+  display: inline-block;
+  margin: 0 48px 48px 0;
+}
+
+.platinum-sponsors img {
+  height: 80px; 
+}
+
 .section#speakers .speaker {
   display: block;
   margin-bottom: 20px;
@@ -542,6 +570,11 @@ body {
   border-radius: 100%;
   -webkit-border-radius: 100%;
 }
+
+.section#speakers h1 {
+  margin-bottom: 72px;
+}
+
 .section#speakers .speaker h2 {
   color: #666666;
   font-size: 22px;
@@ -550,10 +583,16 @@ body {
 .section#speakers .speaker div {
   color: #999999;
 }
+
+.section#schedule h1 {
+  margin-bottom: 60px;
+}
+
 .section#schedule h2 {
   color: #999999;
   margin: 40px 0 0;
 }
+
 .section#schedule .carousel-indicators {
   bottom: auto;
   left: auto;
@@ -924,6 +963,11 @@ div.fancy-select select:focus + div.trigger {
   font-size: 24px;
   margin: 0 auto;
 }
+
+
+/* ------------------------------------------------------------------------------------------
+   OW
+   ---------------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
