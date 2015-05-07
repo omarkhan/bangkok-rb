@@ -444,9 +444,9 @@ body {
   font-weight: 300;
 }
 #logo.scrolled {
-  height: 80px;
-  width: 160px;
-  margin-left: -80px;
+  height: 115px;
+  width: 190px;
+  margin-left: -95px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -483,7 +483,7 @@ body {
   text-align: center;
 }
 
-.banner, .inner, #home {
+.banner, .banner .inner, #home {
   height: 600px;
 }
 
@@ -498,6 +498,11 @@ body {
   position: relative;
 }
 .section .inner .content h1 {
+  font-size: 120px !important;
+  font-family: 'Source Sans Pro', san-serif;
+}
+
+.section .inner-bt .content h1 {
   font-size: 120px !important;
   font-family: 'Source Sans Pro', san-serif;
 }
@@ -682,13 +687,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-.section#register .inner {
+.section#register .inner-bt {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.section#register .inner h1 {
+.section#register .inner-bt h1 {
   color: #fff;
 }
-.section#register .inner .required:after {
+.section#register .inner-bt .required:after {
   content: '*';
   color: #f00;
   font-size: 30px;
@@ -696,7 +701,7 @@ body {
   top: 12px;
   right: 30px;
 }
-.section#register .inner .form-control {
+.section#register .inner-bt .form-control {
   font-size: 20px;
   height: 55px;
   border-radius: 5px;
@@ -704,11 +709,11 @@ body {
   -webkit-box-shadow: 0 0 0 #fff inset;
   box-shadow: 0 0 0 #fff inset;
 }
-.section#register .inner .btn {
+.section#register .inner-bt .btn {
   margin-bottom: 15px;
   padding: 18px 50px;
 }
-.section#register .inner .btn span {
+.section#register .inner-bt .btn span {
   color: #ff0;
 }
 
@@ -969,16 +974,63 @@ div.fancy-select select:focus + div.trigger {
    OW
    ---------------------------------------------------------------------------------------- */
 
+
+.section .inner .content {
+  padding: 36px 0;
+}
+
+.statement {
+  padding: 48px 0;
+}
+
+
+.section .inner .content h1 {
+  margin-top: 0px;
+  margin-bottom: 24px !important;
+}
+
+.section#venue .inner h2 {
+  margin-top: 0px !important;
+}
+
+.section#register {
+  min-height: 0px;
+}
+
+
+.section#register .inner {
+  height: inherit !important;
+}
+
+
+.inner-bt {
+  padding: 60px 30px;
+}
+
+.promo {
+  background: transparent image-url('bg3.jpg') repeat 0 0;
+}
+
+.promo .statement h1, h2, b, p, i {
+  color: black !important;
+}
+
+.promo .statement h2 {
+  margin-bottom: 24px !important;
+}
+
+.promo .statement i {
+  font-size: 24px;
+}
+
+
+
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
    ---------------------------------------------------------------------------------------- */
 @media all and (min-width: 280px) and (max-width: 768px) {
 
   .statement {
-    width: 85%;
-  }
-
-  .sizemic {
     width: 85%;
   }
 
