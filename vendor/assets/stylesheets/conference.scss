@@ -1,3 +1,4 @@
+
 .centered {
   display: inline-block;
   vertical-align: middle;
@@ -38,6 +39,10 @@
   -webkit-border-radius: 10px;
   padding: 20px 50px;
 }
+.btn-lg:hover {
+  background: transparent;
+}
+
 .btn-lg span {
   color: #ff0;
 }
