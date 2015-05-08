@@ -735,7 +735,7 @@
 
       <section class="map">
         <div class="map-canvas">
-          <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Bangkok%2BPocket%2BPlay%2BLabs&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+          <iframe width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Bangkok%2BPocket%2BPlay%2BLabs&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
 
         </div>  
       </section>
@@ -748,53 +748,8 @@
 
 
             <div class="statement">
-              <p>
-                If you guys can help us out a <i>little</i> bit, it would mean the world to us. We are <i>literally</i> paying out of our own pockets now to help 
-                grow the startup community in Bangkok, and we can't do these events much longer on our own as they continue to grow so fast.
-                The tech scene in Bangkok is <b>SCREAMING</b> for developers and we literally drag them out from universities and every other cave they 
-                live in to get them to open their eyes and see how much the world has to offer them.
-              </p>
-              <p>
-                Just try to imagine all the things you take for granted that they might not even have heard about. That thing might be <b>YOUR</b> service!
-                Most people have heard about "the Cloud", big data, and how important metrics are but have they tried Ninefold, Mixpanel,intercom.io 
-                or even know about Microsoft's BizSpark program?
-              </p>
-              <p>
-                This is <b>YOUR</b> chance to reach the startup community in a city of 15 million people with just a few hundred bucks you can increase your 
-                client base in a place you never even thought about yesterday! Please help us help you by raising awareness of your products. This is how we all thrive together!
-              </p>
-              <b>
-                Vouchers only
-              </b>
-              <p>
-                Logo on the website as a voucher sponsor
-              </p>
-              <b>
-                Silver Packages
-              </b>
-              <p>
-                $150 USD Your logos on flyers, web site and you can pitch for job openings after the speakers
-              </p>
-              <b>
-                Gold Packages
-              </b>
-              <p>
-                $250 Your big size logos on flyers, Gold sponsor status web site and our newsletters and T-shirts, short bio of your company on the webpage and a link back to your site
-              </p>
-              <b>
-                Platinum Packages
-              </b>
-              <p>
-                $500 You're insanely big size logos on flyers, Platinum sponsor status web site and our newsletters and T-shirts, short bio of your company on the webpage and link to your site AND eternal gratitude.
-              </p>
-              <b>
-                What do we use the money for?
-              </b>
-              <p>
-                Prizes, marketing of the conference, speaker's costs and the rest goes into a fund to fund the next meetup.
-                This is a <b>PURE</b> non-profit venture and all money is spent on developing technical expertise and networking.
-                It all goes back to you guys eventually, it's like carbon. ;)  
-              </p>            
+              <%= @info.sponsors.html_safe %>
+          
             </div>
 <!-- 
             <h2>Platinum Sponsors</h2>
