@@ -48,7 +48,7 @@ $(document).ready( function() {
 
 
 	// set the speakers item to same height
-	$('.speaker').equalHeights();
+	// $('.speaker').equalHeights();
 
 
 	// Add scrolling effect when clicking the main navigation
