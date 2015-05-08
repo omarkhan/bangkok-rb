@@ -1028,6 +1028,9 @@ div.fancy-select select:focus + div.trigger {
   border: 2px solid white;
 }
 
+form .row {
+  padding: 0 15px;
+}
 
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
@@ -1036,6 +1039,23 @@ div.fancy-select select:focus + div.trigger {
 
   .statement {
     width: 85%;
+  }
+
+  .section .inner .content h1 {
+    font-size: 48px !important;
+  }
+
+  .section .inner-bt .content h1 {
+    font-size: 48px !important;
+  }
+
+  .banner .inner .content h1 {
+    font-size: 48px !important;
+    font-family: 'Source Sans Pro', san-serif;
+  }
+
+  .btn-lg {
+    padding: 6px 12px;
   }
 
   #mainnav .navbar {
