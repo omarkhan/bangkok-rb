@@ -82,59 +82,15 @@
             About
           </h1>
         </center>
-        <p>
-            RubyCon BKK is a monthly conference held in Bangkok focusing on the Ruby language invented by Yukihiro “Matz” Matsumoto.
-            Ruby is an Open Source langauge that gained a lot of popularity after the Ruby on Rails framework was released 
-            in 2005, developed by the Danish David Heinemeier Hansson who used it to write the now world famous Basecamp.
-        </p>
-        <p>
-            This technology is used by many of the worlds biggest tech companies in the world because of its abilty for rapid development 
-            and its ability to shorten the time to market for your product. Wanna learn tech? Start here dude, we are very friendly and we help beginners get started and CTOs to get smarter.
-            Thats what the Ruby commmunity does!
-        </p>
-        <p>
-            Ruby on Rails developers are now the highest paying development jobs in the tech industry today, and its interest is still growing.
-        </p>
-        <p>
-            Amongst the companies use Ruby for their products are: Amazon, Twitter, Hulu, GroupOn, Shopify, Cruncbase, Bloomberg, Indiegogo, 
-            Airbnb, SoundCloud, Heroku, Zendesk, GitHub... Well I think you get it already....
-        </p>
-
-        <center>
-          <h1 style="margin: 0px;">
-            Free Macbook!
-          </h1>
-        </center>
-        <center>
-          <h2>
-            What the hell?
-          </h2>
-        </center>
-        <center>
-          <b>
-            Yes, its true. We are giving away a <i>brand new fully specked</i> Macbook Air to you guys just for showing up.
-          </b>
-          <br><br>
-        </center>
-        <center>
-          <i>Yeah, right, whats the catch?</i> <br> <br>
-        </center>
-        <p>
-          No catch! Just register, and put your business card in the jar when you show up
-          and after the speakers are done we will draw out a business card (if you dont have one just put your name in a note) 
-          and that girl, or guy, walks out with a brand new Mac Air. Even we don't have that!
-        </p>
-        <p>
-          So register today, and it will be you that can show off to your friends what you won just by showing up at Ekkamai one random Wednesday!
-        </p>
+          <%= @info.about.html_safe %>
       </div>
     </section>
 
-      <section class="section" id="speakers">
-        <div class="inner">
-          <div class="content">
-            <h1>Speakers</h1>
-            <div class="row">
+    <section class="section" id="speakers">
+      <div class="inner">
+        <div class="content">
+          <h1>Speakers</h1>
+          <div class="row">
 
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
     <div class="speaker">
@@ -803,44 +759,33 @@
                 This is <b>YOUR</b> chance to reach the startup community in a city of 15 million people with just a few hundred bucks you can increase your 
                 client base in a place you never even thought about yesterday! Please help us help you by raising awareness of your products. This is how we all thrive together!
               </p>
-
-              <center>
-                <b>
-                  Vouchers only
-                </b>
-              </center>
+              <b>
+                Vouchers only
+              </b>
               <p>
                 Logo on the website as a voucher sponsor
               </p>
-              <center>
-                <b>
-                  Silver Packages
-                </b>
-              </center>
+              <b>
+                Silver Packages
+              </b>
               <p>
                 $150 USD Your logos on flyers, web site and you can pitch for job openings after the speakers
               </p>
-              <center>
-                <b>
-                  Gold Packages
-                </b>
-              </center>
+              <b>
+                Gold Packages
+              </b>
               <p>
                 $250 Your big size logos on flyers, Gold sponsor status web site and our newsletters and T-shirts, short bio of your company on the webpage and a link back to your site
               </p>
-              <center>
-                <b>
-                  Platinum Packages
-                </b>
-              </center>
+              <b>
+                Platinum Packages
+              </b>
               <p>
                 $500 You're insanely big size logos on flyers, Platinum sponsor status web site and our newsletters and T-shirts, short bio of your company on the webpage and link to your site AND eternal gratitude.
               </p>
-              <center>
-                <b>
-                  What do we use the money for?
-                </b>
-              </center>
+              <b>
+                What do we use the money for?
+              </b>
               <p>
                 Prizes, marketing of the conference, speaker's costs and the rest goes into a fund to fund the next meetup.
                 This is a <b>PURE</b> non-profit venture and all money is spent on developing technical expertise and networking.

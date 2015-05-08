@@ -754,7 +754,13 @@ body {
 
 .about-section {
   background: transparent image-url('dark_bg.png');
+  color: white;
 }
+
+.about-section p, b, i {
+  color: white !important;
+}
+
 
 /* ------------------------------------------------------------------------------------------
    FOOTER

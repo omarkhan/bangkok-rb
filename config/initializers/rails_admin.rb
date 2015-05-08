@@ -8,6 +8,23 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
 
+  config.model Info do
+    edit do
+      # For RailsAdmin >= 0.5.0
+      # To configure the editor bar or the parser rules pass a hash of options:
+      # For RailsAdmin >= 0.5.0
+      field :about, :wysihtml5 do
+        config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
+                       html: true, # enables html editor
+                       parserRules: { tags: { p:1 } } # support for <p> in html mode
+      end   
+      # For RailsAdmin < 0.5.0
+      # field :description do
+      #   bootstrap_wysihtml5 true
+      # end
+    end
+  end
+
   ## == Cancan ==
   # config.authorize_with :cancan
 
@@ -32,3 +49,4 @@ RailsAdmin.config do |config|
     # history_show
   end
 end
+

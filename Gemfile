@@ -8,6 +8,8 @@ gem 'rails', '4.2.1'
 
 gem 'devise'
 gem 'rails_admin'
+gem 'font-awesome-sass', '~> 4.3.0'
+gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
