@@ -14,8 +14,6 @@ RailsAdmin.config do |config|
       # To configure the editor bar or the parser rules pass a hash of options:
       # For RailsAdmin >= 0.5.0
       field :number
-      field :occupation
-      field :phone_number
       field :about, :wysihtml5 do
         config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
                        html: true, # enables html editor
