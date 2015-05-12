@@ -35,21 +35,34 @@
             <h3>20th of May, 2015</h3>
             <h4>Bangkok, Thailand</h4>
             <div>
-              <a href="#register" class="btn btn-primary btn-lg">Get Your <span>Ticket</span></a>
+              <a href="#register" class="btn btn-primary btn-lg">Register and stand a <br> chance to win a <span>Macbook</span></a>
+
             </div>
           </div><!-- /content -->
         </div><!-- /inner -->
       </section><!-- /section -->
       
       <section class="platinum-sponsors">
+
+          
+        <%# @images.each do |image| %>
+         <%#= image_tag "samples/logos/platinum/#{File.basename(path)}" %>
+        <%# end %>
+        
         <a href="#">
-          <%= image_tag 'samples/logos/platinum/omise.png' %>
+          <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 100px" %>
+        </a>
+        <a href="#">
+          <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
         </a>
         <a href="#">
           <%= image_tag 'samples/logos/platinum/pocket-play.png' %>
         </a>
         <a href="#">
-          <%= image_tag 'samples/logos/platinum/oozou.png' %>
+          <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
+        </a>
+        <a href="#">
+          <%= image_tag 'samples/logos/platinum/Page365.png' %>
         </a>
         <a href="#">
           <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
@@ -58,7 +71,7 @@
           <%= image_tag 'samples/logos/platinum/hubba.png' %>
         </a>
         <a href="#">
-          <%= image_tag 'samples/logos/platinum/tech.png' %>
+          <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px" %>
         </a>
         <a href="#">
           <%= image_tag 'samples/logos/platinum/e27.png' %>
@@ -71,9 +84,6 @@
         </a>
         <a href="#">
           <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/Page365.png' %>
         </a>
       </section>
 
@@ -303,7 +313,7 @@
   <div class="tentative">
     <div class="row">
       <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-5.jpg' %>
+        <%= image_tag 'samples/omar.png' %>
       </div>
       <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
         <div class="social">
@@ -312,37 +322,28 @@
           <a href="#"><i class="fa fa-google-plus-square"></i></a>
         </div>
         <div class="time">20:15 PM</div>
-        <h4>TBA <span>AWS</span></h4>
-        <p><span>TBA</span></p>
+        <h4>Omar Khan <span>Senior Back-end Developer/PocketPlay Labs</span></h4>
+        <p><span>Microservices with Rails</span></p>
         <p class="summary">
-          TBA
+          Backend lead at Playlab Games. Deploys ruby code to millions of people every day. Interested in scalability, UX and devops.
         </p>
       </div>
     </div>
   </div><!-- /tentative -->
+
 
 
   <div class="tentative">
     <div class="row">
       <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/start.png' %>
+        <%= image_tag 'samples/opening.jpg' %>
       </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div>
+      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
         <div class="time">20:30 PM</div>
-        <h4>Wittawas "Start" Wisarnkanchana <span>Senior Developer Uteeni</span></h4>
-        <p><span>PHP Design Patterns in Real World</span></p>
-        <p class="summary">
-          Uteeni is a business directory that focuses on getting every business in Thailand on line for an entery level cost. <br> Customers can easily edit and enhance their online presence for free using either a mobile or desktop. Start will give insight**
-        </p>
+        <p><span>Networking</span></p>
       </div>
     </div>
   </div><!-- /tentative -->
-
 
 </div><!-- /schedule -->    </div>
 
