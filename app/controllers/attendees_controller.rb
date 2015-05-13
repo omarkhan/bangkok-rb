@@ -29,6 +29,8 @@ class AttendeesController < ApplicationController
 
     respond_to do |format|
       if @attendee.save
+        # Mailer action
+        AttendeeMailer.registration_success(@attendee).deliver
         # format.html { redirect_to @attendee, notice: 'Attendee was successfully created.' }
         format.js
       else
