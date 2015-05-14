@@ -85,7 +85,7 @@ Rails.application.configure do
     password: ENV['MANDRILL_PASSWORD']
   }
 
-  config.action_mailer.default_url_options     = ENV['DEFAULT_HOST']
-  config.action_controller.default_url_options = ENV['DEFAULT_HOST']
+  config.action_mailer.default_url_options     = { host: ENV['DEFAULT_HOST'] }
+  config.action_controller.default_url_options = { host: ENV['DEFAULT_HOST'] }
 
 end
