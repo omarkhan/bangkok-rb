@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :attendees
+  resources :attendees, only: [:create]
   root 'visitors#index'
 
   devise_for :users, :skip => [:sessions]
