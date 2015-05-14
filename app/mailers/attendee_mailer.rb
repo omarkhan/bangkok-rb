@@ -1,7 +1,7 @@
 class AttendeeMailer < ApplicationMailer
-  default from: "benjammin72@gmail.com"
+  default from: "support@uteeni.com"
 
-  def register_success_email(attendee)
+  def registration_success(attendee)
     @reciever = attendee
     @url = 'www.uteeni.com'
     mail(to: @reciever.email, subject: 'Thanks for registering!')
