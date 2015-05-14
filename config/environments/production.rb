@@ -87,7 +87,5 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options     = ENV['DEFAULT_HOST']
   config.action_controller.default_url_options = ENV['DEFAULT_HOST']
-  config.mandrill_mailer.default_url_options   = ENV['DEFAULT_HOST']
-
 
 end
