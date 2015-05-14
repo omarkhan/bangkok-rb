@@ -1066,6 +1066,14 @@ form .row {
   font-family: 'Source Sans Pro', san-serif;
 }
 
+#speakers [class*="col-"] {
+  height: 280px;
+}
+
+.row {
+  padding: 0 24px;
+}
+
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
    ---------------------------------------------------------------------------------------- */
@@ -1074,8 +1082,6 @@ form .row {
   .statement {
     width: 85%;
   }
-
-
 
   .about-header {
     font-size: 48px !important;
