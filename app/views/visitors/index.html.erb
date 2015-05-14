@@ -48,43 +48,51 @@
         <%# @images.each do |image| %>
          <%#= image_tag "samples/logos/platinum/#{File.basename(path)}" %>
         <%# end %>
-        
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 100px" %>
-        </a>
-        <a href="#">
+
+        <%= link_to 'http://www.uteeni.com' do %>
+          <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 120px" %>
+        <% end %>
+
+        <%= link_to 'https://www.omise.co' do %>
           <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/pocket-play.png' %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/Page365.png' %>
-        </a>
-        <a href="#">
+        <% end %>
+
+
+        <%= link_to 'https://www.page365.net' do %>
+          <%= image_tag 'samples/logos/platinum/Page365.png', :style => "height: 60px" %>
+        <% end %>
+
+        <%= link_to 'https://aws.amazon.com' do %>
           <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
-        </a>
-        <a href="#">
+        <% end %>
+
+        <%= link_to 'http://www.playlab.com' do %>
+          <%= image_tag 'samples/logos/platinum/pocket-play.png', :style => "height: 70px" %>
+        <% end %>
+
+        <%= link_to 'http://www.oozou.com' do %>
+          <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
+        <% end %>
+
+        <%= link_to 'http://hubbathailand.com' do %>
           <%= image_tag 'samples/logos/platinum/hubba.png' %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px" %>
-        </a>
-        <a href="#">
+        <% end %>
+
+        <%= link_to 'https://www.techinasia.com' do %>
+          <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px"  %>
+        <% end %>
+
+        <%= link_to 'http://www.e27.co' do %>
           <%= image_tag 'samples/logos/platinum/e27.png' %>
-        </a>
-        <a href="#">
+        <% end %>
+
+        <%= link_to 'http://www.github.com' do %>
           <%= image_tag 'samples/logos/platinum/github.png' %>
-        </a>
-        <a href="#">
-          <%= image_tag 'samples/logos/platinum/dtac.png' %>
-        </a>
-        <a href="#">
+        <% end %>
+
+        <%= link_to 'http://www.findyourspace.co/' do %>
           <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
-        </a>
+        <% end %>
       </section>
 
 
