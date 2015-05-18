@@ -565,7 +565,7 @@ body {
 
 .platinum-sponsors a {
   display: inline-block;
-  margin: 0 48px 48px 0;
+  margin: 0 48px 24px 0;
 }
 
 .platinum-sponsors img {
@@ -1076,6 +1076,16 @@ form .row {
 
 .section#schedule .carousel-indicators li.active {
   background-color: #EB4845;
+}
+
+
+.platinum-sponsors h3 {
+  font-size: 44px;
+}
+
+
+.map-canvas {
+  pointer-events: none;
 }
 
 /* ------------------------------------------------------------------------------------------

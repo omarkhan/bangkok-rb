@@ -9,6 +9,7 @@ var setSectionHeight = function() {
 	$('.section > .inner').css('min-height', winHeight);
 };
 
+var $mapFrame = $('.map').children('.map-canvas').find('iframe');
 
 $(document).ready( function() {
 
@@ -44,6 +45,16 @@ $(document).ready( function() {
 				$(this).addClass('active');
 			}
 		});
+	});
+
+
+	// Disable map scroll
+	$('.map').click(function () {
+		$mapFrame.css("pointer-events", "auto");
+	});
+
+	$('#venue, #sponsors').click(function() {
+		$mapFrame.css("pointer-events", "none");
 	});
 
 
