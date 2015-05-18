@@ -49,83 +49,89 @@
          <%#= image_tag "samples/logos/platinum/#{File.basename(path)}" %>
         <%# end %>
         
-        <h3>
-          Platinum Sponsors
-        </h3>
-        <hr>
-
-        <%= link_to 'http://www.uteeni.com' do %>
-          <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 120px" %>
-        <% end %>
-
-        <%= link_to 'https://www.omise.co' do %>
-          <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
-        <% end %>
-
-        <%= link_to 'http://www.playlab.com' do %>
-          <%= image_tag 'samples/logos/platinum/pocket-play.png', :style => "height: 70px" %>
-        <% end %>
-
-        <%= link_to 'http://www.oozou.com' do %>
-          <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
-        <% end %>
-
-        <%= link_to 'http://hubbathailand.com' do %>
-          <%= image_tag 'samples/logos/platinum/hubba.png' %>
-        <% end %>
-
-        <%= link_to 'http://angel.co' do %>
-          <%= image_tag 'samples/logos/platinum/angellist.png', :style => "height: 50px" %>
-        <% end %>
-
-        <h3 style="margin-bottom: 12px;">
-          Gold Sponsors
-        </h3>
-        <hr style="margin-bottom: 12px">
-
-        <%= link_to 'https://www.techinasia.com' do %>
-          <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px"  %>
-        <% end %>
-
-        <%= link_to 'http://www.e27.co' do %>
-          <%= image_tag 'samples/logos/platinum/e27.png', :style => "height: 60px" %>
-        <% end %>
-
-        <%= link_to 'http://www.github.com' do %>
-          <%= image_tag 'samples/logos/platinum/github.png' %>
-        <% end %>
-
-        <%= link_to 'http://www.findyourspace.co/' do %>
-          <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
-        <% end %>
-
-        <%= link_to 'https://aws.amazon.com' do %>
-          <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
-        <% end %>
-
-        <%= link_to 'https://www.page365.net' do %>
-          <%= image_tag 'samples/logos/platinum/Page365.png', :style => "height: 60px" %>
-        <% end %>
 
 
+        <div class="sponsors-container platinum">
+          <h3>
+            Platinum Sponsors
+          </h3>
+          <hr>
+          <%= link_to 'http://www.uteeni.com' do %>
+            <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 120px" %>
+          <% end %>
 
-        <h3 style="margin-bottom: 12px;">
-          Silver Sponsors
-        </h3>
-        <hr>
+          <%= link_to 'https://www.omise.co' do %>
+            <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
+          <% end %>
 
-        <%= link_to 'https://github.com/nimbl3/our-team/tree/master/openings' do %>
-          <%= image_tag 'samples/logos/platinum/nimble.png', :style => "height: 40px" %>
-        <% end %>
+          <%= link_to 'http://www.playlab.com' do %>
+            <%= image_tag 'samples/logos/platinum/pocket-play.png', :style => "height: 70px" %>
+          <% end %>
 
-        <%= link_to 'https://www.facebook.com/DrinkentrepreneurBangkok' do %>
-          <%= image_tag 'samples/logos/platinum/drink.png', :style => "height: 120px" %>
-        <% end %>
+          <%= link_to 'http://www.oozou.com' do %>
+            <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
+          <% end %>
 
-        <%= link_to 'http://getlinks.co' do %>
-          <%= image_tag 'samples/logos/platinum/links.png', :style => "height: 100px" %>
-        <% end %>
+          <%= link_to 'http://hubbathailand.com' do %>
+            <%= image_tag 'samples/logos/platinum/hubba.png' %>
+          <% end %>
 
+          <%= link_to 'http://angel.co' do %>
+            <%= image_tag 'samples/logos/platinum/angellist.png', :style => "height: 50px" %>
+          <% end %>          
+        </div>
+
+
+        <div class="sponsors-container gold">
+          <h3>
+            Gold Sponsors
+          </h3>
+          <hr style="margin-bottom: 60px;">
+
+          <%= link_to 'https://www.techinasia.com' do %>
+            <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px"  %>
+          <% end %>
+
+          <%= link_to 'http://www.e27.co' do %>
+            <%= image_tag 'samples/logos/platinum/e27.png', :style => "height: 60px" %>
+          <% end %>
+
+          <%= link_to 'http://www.github.com' do %>
+            <%= image_tag 'samples/logos/platinum/github.png' %>
+          <% end %>
+
+          <%= link_to 'http://www.findyourspace.co/' do %>
+            <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
+          <% end %>
+
+          <%= link_to 'https://aws.amazon.com' do %>
+            <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
+          <% end %>
+
+          <%= link_to 'https://www.page365.net' do %>
+            <%= image_tag 'samples/logos/platinum/Page365.png', :style => "height: 60px" %>
+          <% end %>
+        </div>
+
+
+        <div class="sponsors-container silver">
+          <h3>
+            Silver Sponsors
+          </h3>
+          <hr style="margin-bottom: 42px;">
+
+          <%= link_to 'https://github.com/nimbl3/our-team/tree/master/openings' do %>
+            <%= image_tag 'samples/logos/platinum/nimble.png', :style => "height: 40px" %>
+          <% end %>
+
+          <%= link_to 'https://www.facebook.com/DrinkentrepreneurBangkok' do %>
+            <%= image_tag 'samples/logos/platinum/drink.png', :style => "height: 120px" %>
+          <% end %>
+
+          <%= link_to 'http://getlinks.co' do %>
+            <%= image_tag 'samples/logos/platinum/links.png', :style => "height: 100px" %>
+          <% end %>
+        </div>
 
       </section>
 
