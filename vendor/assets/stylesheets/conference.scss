@@ -566,6 +566,10 @@ body {
 .platinum-sponsors a {
   display: inline-block;
   margin: 0 48px 24px 0;
+  transition:all .2s linear;
+  -o-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -webkit-transition:all .2s linear;
 }
 
 .platinum-sponsors img {
@@ -1090,7 +1094,7 @@ form .row {
 
 
 .sponsors-container {
-  height: 400px;
+
   margin-bottom: 36px;
 }
 
@@ -1105,6 +1109,10 @@ form .row {
 
   .sponsors-container {
     height: auto;
+  }
+
+  .platinum-sponsors a {
+    margin: 0 auto 36px auto;
   }
 
   .statement {
@@ -1239,10 +1247,13 @@ form .row {
 
 
   .sponsors-container {
-    height: 400px;
+    height: auto;
   }
 
 
+  .sponsors-container:first-of-type {
+    height: auto;
+  }
 
   .about-header {
     font-size: 60px !important;
@@ -1383,6 +1394,11 @@ form .row {
 @media (min-width: 1600px) {
   .sponsors-container {
     height: 300px;
+  }
+
+
+  .sponsors-container:first-of-type {
+    height: 400px;
   }
 
 }
