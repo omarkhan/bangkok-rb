@@ -566,6 +566,10 @@ body {
 .platinum-sponsors a {
   display: inline-block;
   margin: 0 48px 24px 0;
+  transition:all .2s linear;
+  -o-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -webkit-transition:all .2s linear;
 }
 
 .platinum-sponsors img {
@@ -1090,15 +1094,30 @@ form .row {
 
 
 .sponsors-container {
-  height: 250px;
+
   margin-bottom: 36px;
 }
 
 
+.remove-br {
+  border-radius: 0 !important;
+}
+
 /* ------------------------------------------------------------------------------------------
    RESPONSIVE
    ---------------------------------------------------------------------------------------- */
+
 @media all and (min-width: 280px) and (max-width: 768px) {
+
+
+
+  .sponsors-container {
+    height: auto;
+  }
+
+  .platinum-sponsors a {
+    margin: 0 auto 36px auto;
+  }
 
   .statement {
     width: 85%;
@@ -1124,6 +1143,7 @@ form .row {
 
   .btn-lg {
     padding: 6px 12px;
+    font-size: 15px;
   }
 
   #mainnav .navbar {
@@ -1228,6 +1248,37 @@ form .row {
 }
 /* Small devices (tablets, 768px and up) */
 @media all and (min-width: 768px) and (max-width: 1204px) {
+
+
+  .sponsors-container {
+    height: auto;
+  }
+
+
+  .sponsors-container:first-of-type {
+    height: auto;
+  }
+
+  .about-header {
+    font-size: 60px !important;
+    font-family: 'Source Sans Pro', san-serif;
+  }
+
+  .section .inner .content h1 {
+    font-size: 60px !important;
+  }
+
+  .section .inner-bt .content h1 {
+    font-size: 60px !important;
+  }
+
+  .banner .inner .content h1 {
+    font-size: 60px !important;
+    font-family: 'Source Sans Pro', san-serif;
+  }
+
+
+
   #mainnav .navbar {
     background: rgba(0, 0, 0, 0.8);
     -webkit-transition: all 0.3s linear;
@@ -1341,4 +1392,17 @@ form .row {
   footer .copyright {
     text-align: right;
   }
+}
+
+
+@media (min-width: 1600px) {
+  .sponsors-container {
+    height: 300px;
+  }
+
+
+  .sponsors-container:first-of-type {
+    height: 400px;
+  }
+
 }
