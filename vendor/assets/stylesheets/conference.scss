@@ -637,12 +637,12 @@ body {
   -webkit-border-radius: 0;
 }
 .section#schedule .carousel-indicators li:first-child {
-  border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 }
 .section#schedule .carousel-indicators li:last-child {
-  border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 }
 .section#schedule .carousel-indicators li.active {
   background-color: #a2c92b;

@@ -1,929 +1,284 @@
-  <div id="mainnav">  
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar-header visible-xs">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Expert CONF 2013</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-          <li data-menuanchor="speakers"><a href="#speakers">Speakers</a></li>
-          <li data-menuanchor="schedule" class="mid-li-left"><a href="#schedule">Schedule</a></li>
-          <li data-menuanchor="venue" class="mid-li-right"><a href="#venue">Venue</a></li>
-          <li data-menuanchor="sponsors"><a href="#sponsors">Sponsors</a></li>
-          <li data-menuanchor="register"><a href="#register">Register</a></li>
-        </ul>
-      </div>
-    </nav>
+<div id="mainnav">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header visible-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Expert CONF 2013</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+        <li data-menuanchor="speakers"><a href="#speakers">Speakers</a></li>
+        <li data-menuanchor="schedule" class="mid-li-left"><a href="#schedule">Schedule</a></li>
+        <li data-menuanchor="venue" class="mid-li-right"><a href="#venue">Venue</a></li>
+        <li data-menuanchor="sponsors"><a href="#sponsors">Sponsors</a></li>
+        <li data-menuanchor="register"><a href="#register">Register</a></li>
+      </ul>
+    </div>
+  </nav>
   </div><!-- /mainnav -->
-
-<div class="hidden-xs">
-      <h1 id="logo">
-      </h1>
-    </div>
-
-    <div>
-      <section class="banner" id="home">
-        <div class="inner">
-          <div class="content">
-            <h1>RUBY CONFERENCE</h1>
-            <h3>20th of May, 2015</h3>
-            <h4>Bangkok, Thailand</h4>
-            <div>
-              <a href="#register" class="btn btn-primary btn-lg">Register and stand a <br> chance to win a <span>Macbook</span></a>
-
-            </div>
-          </div><!-- /content -->
-        </div><!-- /inner -->
-      </section><!-- /section -->
-      
-      <section class="platinum-sponsors">
-
-          
-        <%# @images.each do |image| %>
-         <%#= image_tag "samples/logos/platinum/#{File.basename(path)}" %>
-        <%# end %>
-        
-
-
-        <div class="sponsors-container platinum">
-          <h3>
-            Platinum Sponsors
-          </h3>
-          <hr>
-          <%= link_to 'http://www.uteeni.com' do %>
-            <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 120px" %>
-          <% end %>
-
-          <%= link_to 'https://www.omise.co' do %>
-            <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
-          <% end %>
-
-          <%= link_to 'http://www.playlab.com' do %>
-            <%= image_tag 'samples/logos/platinum/pocket-play.png', :style => "height: 70px" %>
-          <% end %>
-
-          <%= link_to 'http://www.oozou.com' do %>
-            <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
-          <% end %>
-
-          <%= link_to 'http://hubbathailand.com' do %>
-            <%= image_tag 'samples/logos/platinum/hubba.png' %>
-          <% end %>
-
-          <%= link_to 'http://angel.co' do %>
-            <%= image_tag 'samples/logos/platinum/angellist.png', :style => "height: 50px" %>
-          <% end %>          
-        </div>
-
-
-        <div class="sponsors-container gold">
-          <h3>
-            Gold Sponsors
-          </h3>
-          <hr style="margin-bottom: 60px;">
-
-          <%= link_to 'https://www.techinasia.com' do %>
-            <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px"  %>
-          <% end %>
-
-          <%= link_to 'http://www.e27.co' do %>
-            <%= image_tag 'samples/logos/platinum/e27.png', :style => "height: 60px" %>
-          <% end %>
-
-          <%= link_to 'http://www.github.com' do %>
-            <%= image_tag 'samples/logos/platinum/github.png' %>
-          <% end %>
-
-          <%= link_to 'http://www.findyourspace.co/' do %>
-            <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
-          <% end %>
-
-          <%= link_to 'https://aws.amazon.com' do %>
-            <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
-          <% end %>
-
-          <%= link_to 'https://www.page365.net' do %>
-            <%= image_tag 'samples/logos/platinum/Page365.png', :style => "height: 60px" %>
-          <% end %>
-        </div>
-
-
-        <div class="sponsors-container silver">
-          <h3>
-            Silver Sponsors
-          </h3>
-          <hr style="margin-bottom: 42px;">
-
-          <%= link_to 'https://github.com/nimbl3/our-team/tree/master/openings' do %>
-            <%= image_tag 'samples/logos/platinum/nimble.png', :style => "height: 40px" %>
-          <% end %>
-
-          <%= link_to 'https://www.facebook.com/DrinkentrepreneurBangkok' do %>
-            <%= image_tag 'samples/logos/platinum/drink.png', :style => "height: 120px" %>
-          <% end %>
-
-          <%= link_to 'http://getlinks.co' do %>
-            <%= image_tag 'samples/logos/platinum/links.png', :style => "height: 100px" %>
-          <% end %>
-        </div>
-
-      </section>
-
-
-    <section class="about-section">
-      <div class="statement">
-        <center>  
-          <h1 class="about-header">
-            About
-          </h1>
-        </center>
-          <%= @info.about.html_safe %>
-      </div>
-    </section>
-
-    <section class="section" id="speakers">
-      <div class="inner-bt">
-        <div class="content">
-          <h1>Speakers</h1>
-          <div class="row">
-
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/ben.png' %>
-      <h2>Benjamin Fauchald</h2>
-      <div>Uteeni</div>
-    </div>
+  <div class="hidden-xs">
+    <h1 id="logo">
+    </h1>
   </div>
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/pop.png' %>
-      <h2>Prathan "POP" Thananart</h2>
-      <div>Page365</div>
-    </div>
-  </div>
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/zack.png' %>
-      <h2>Sakchai "Zack" Siripanyawuth</h2>
-      <div>Codemy / CTO Uteeni</div>
-    </div>
-  </div>
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/constantine.png' %>
-      <h2>Constantin Hofstetter</h2>
-      <div>Senior Developer, Oozou</div>
-    </div>
-  </div>
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/robin.png' %>
-      <h2>Robin Clart</h2>
-      <div>CTO Omise</div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-    <div class="speaker">
-      <%= image_tag 'samples/omar.png' %>
-      <h2>Omar Khan</h2>
-      <div>Senior Back-end Developer, PocketPlay Labs</div>
-    </div>
-  </div>
-
-</div><!-- /row -->         </div><!-- /content -->
-        </div><!-- /inner -->
-      </section><!-- /section -->
-
-
-      <div class="section alt" id="schedule">
-        <div class="inner">
-          <div class="content">
-            <h1>Schedule</h1>
-            <div id="event-schedule" class="carousel slide">
-  <div>
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li class="active" data-target="#event-schedule" data-slide-to="0">20th of May</li>
-        <li data-target="#event-schedule" data-slide-to="1">24th of June</li>
-        <li data-target="#event-schedule" data-slide-to="2">22nd of July</li>
-      </ol>
-  </div>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <h2 class="schedule-day">20th of May, 2015</h2>
-<div class="schedule">
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/register.jpg' %>
+<section class="banner" id="home">
+  <div class="inner">
+    <div class="content">
+      <h1>RUBY CONFERENCE</h1>
+      <h3>26th of August, 2015</h3>
+      <h4>Bangkok, Thailand</h4>
+      <div>
+        <a href="#register" class="btn btn-primary btn-lg">Register and stand a <br> chance to win a <span>Macbook</span></a>
       </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">18:00 PM</div>
-        <h4>Registration</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/opening.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">18:15 PM</div>
-        <h4>Benjamin Fauchald <span>CEO/Uteeni</span></h4>
-        <p><span>Short opening and welcome</span></p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/zack.png' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">18:45 AM</div>
-        <h4>Sakchai "Zack" Siripanyawuth <span>Codemy / CTO Uteeni</span></h4>
-        <p><span>
-          Building your first Rails app
-        </span></p>
-        <p class="summary">
-          Zack does tech training and is training developers from scratch or 
-          any other level to become fluent <br> in the ROR framework and many of his former
-          studens now run sucessfull startups.
-        </p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/pop.png' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">18:30 PM</div>
-        <h4>Prathan "POP" Thananart <span>Page365</span></h4>
-        <p><span>Pop will show you how his team evolved a Ruby on Rails stack that 
-        scales to support 20,000 merchants.</span></p>
-        <p class="summary">
-          Page365 is world's first social commerce engine built for 
-          regional merchants who engage with customers over Facebook and LINE.
-        </p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-       <%= image_tag 'samples/constantine.png' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">19:15 PM</div>
-        <h4>Constantin Hofstetter<span>Senior Developer, Oozou</span></h4>
-        <p><span>Website Performance and Optimization in Rails.</span></p>
-        <p class="summary">
-          Oozou is a Bangkoks leading development house and focuses largely on Rails and iOS. <br>
-          Oozou works primaraly with customers overseas, but have some domestic clients as well.
-        </p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/lunch.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">19:45 PM</div>
-        <h4>Quick Break</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/robin.png' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">20:00 PM</div>
-        <h4>Robin Clart <span>CTO Omise</span></h4>
-        <p><span>How to control high transaction volumes</span></p>
-        <p class="summary">
-          Omise is "the Stripe of Asia", solving the one of the biggest challanges for ecommerce in Soth East Asia, payments. <br> Just a few days ago Omise got its series A round going and we are so lucky to have the CTO here talking about Ruby and scalability.
-        </p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/omar.png' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">20:15 PM</div>
-        <h4>Omar Khan <span>Senior Back-end Developer/PocketPlay Labs</span></h4>
-        <p><span>Microservices with Rails</span></p>
-        <p class="summary">
-          Backend lead at Playlab Games. Deploys ruby code to millions of people every day. Interested in scalability, UX and devops.
-        </p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/opening.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">20:30 PM</div>
-        <h4>
-          Networking
-        </h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-</div><!-- /schedule -->    </div>
-
-
-<!-- Second conference -->
-
-    <div class="item">
-      <h2 class="schedule-day">24th of June, 2015</h2>
-<div class="schedule">
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/opening.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">09.00 AM</div>
-        <h4>Opening Ceremony</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-3.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">10.00 AM</div>
-        <h4>TBA <span>BlackHat Linux Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-4.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">11.00 AM</div>
-        <h4>TBA <span>Open Source Fanatics</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-5.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">12.00 AM</div>
-        <h4>TBA <span>Designer Wall Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/lunch.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">01.00 PM</div>
-        <h4>TBA</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-       <%= image_tag 'samples/avatar-6.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">02.00 PM</div>
-        <h4>TBA <span>Smashing the Wall</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-7.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">03.00 PM</div>
-        <h4>TBA <span>Breaking the Habits Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-8.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">04.00 PM</div>
-        <h4>TBA <span>Positive Design Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/break.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">05.00 PM</div>
-        <h4>TBA</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-9.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">05.30 PM</div>
-        <h4>TBA <span>Source Code Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-</div><!-- /schedule -->    </div>
-
-    <div class="item">
-      <h2 class="schedule-day">22nd of July</h2>
-<div class="schedule">
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/opening.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">09.00 AM</div>
-        <h4>TBA</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-3.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">10.00 AM</div>
-        <h4>TBA <span>BlackHat Linux Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-4.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">11.00 AM</div>
-        <h4>TBA <span>Open Source Fanatics</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-5.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">12.00 AM</div>
-        <h4>TBA <span>Designer Wall Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/lunch.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">01.00 PM</div>
-        <h4>TBA</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-6.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">02.00 PM</div>
-        <h4>TBA <span>Smashing the Wall</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-7.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">03.00 PM</div>
-        <h4>TBA <span>Breaking the Habits Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-8.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">04.00 PM</div>
-        <h4>TBA <span>Positive Design Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/break.jpg' %>
-      </div>
-      <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <div class="time">05.00 PM</div>
-        <h4>TBA</h4>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-  <div class="tentative">
-    <div class="row">
-      <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-        <%= image_tag 'samples/avatar-9.jpg' %>
-      </div>
-      <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-        <!-- <div class="social">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
-        </div> -->
-        <div class="time">05.30 PM</div>
-        <h4>TBA <span>Source Code Inc.</span></h4>
-        <p>Topic: <span></span><p>
-        <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div><!-- /tentative -->
-
-
-</div><!-- /schedule -->    </div>
-  </div>
-</div>          </div><!-- /content -->
-        </div><!-- /inner -->
-      </section><!-- /section -->
-
-
-      <section class="section" id="venue">
-        <div class="inner-bt">
-          <div class="content">
-            <h1>Venue</h1>
-            <h2>Pocket Play Labs</h2>
-<h3>Bangkok, Thailand</h3>
-
     </div><!-- /content -->
-      </div><!-- /inner -->
-        </section><!-- /section -->
-
-      <section class="map">
-        <div class="map-canvas">
-          <iframe width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Bangkok%2BPocket%2BPlay%2BLabs&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
-        </div>  
-      </section>
-
-
-      <div class="section alt" id="sponsors">
-        <div class="inner">
-          <div class="content">
-            <h1>Sponsors</h1>
-
-
-            <div class="statement">
-              <%= @info.sponsors.html_safe %>
+  </div><!-- /inner -->
+</section><!-- /section -->
           
-            </div>
-<!-- 
-            <h2>Platinum Sponsors</h2>
-
-            <div>
-              <a href="#">
-                <%= image_tag 'samples/logos/RedHat.png' %>
-              </a>
-              
-              <a href="#">
-                <%= image_tag 'samples/logos/Ubuntu.png' %>
-              </a>
-            </div>
-
-            <hr>
-
-            <h2>Premium Sponsors</h2>
-
-            <div>
-              <a href="#">
-                <%= image_tag 'samples/logos/Google.png' %>
-              </a>
-
-              <a href="#">
-                <%= image_tag 'samples/logos/Rackspace.png' %>
-              </a>
-
-              <a href="#">
-                <%= image_tag 'samples/logos/NewRelic.png' %>
-              </a>
-
-              <a href="#">
-                <%= image_tag 'samples/logos/Amazon.png' %>
-              </a>
-
-              <a href="#">
-                <%= image_tag 'samples/logos/CloudStack.png' %>
-              </a>
-            </div>   -->        
-          </div><!-- /content -->
-
-        </div><!-- /inner -->
-      </section><!-- /section -->
-
-      </section>
-
-      <section class="section" id="register">
-        <div class="inner-bt">
-          <div class="content">
-            <h1>Free Registration</h1>
-            <div class="row content" id="form-container">
-
-              <%= form_for(@attendee, remote: true, :html => {:id => "attendenceForm"}) do |f| %>
-                <% if @attendee.errors.any? %>
-                  <div id="error_explanation">
-                    <h2><%= pluralize(@attendee.errors.count, "error") %> prohibited this attendee from being saved:</h2>
-
-                    <ul>
-                    <% @attendee.errors.full_messages.each do |message| %>
-                      <li><%= message %></li>
-                    <% end %>
-                    </ul>
-                  </div>
-                <% end %>
-
-
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-                    <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-                    <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
-                  </div>
-                </div><!-- /row -->
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-                    <%= f.text_field :occupation, class: 'form-control', placeholder: 'Occupation' %>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
-                    <%= f.text_field :phone_number, class: 'form-control', placeholder: 'Phone Number' %>
-                  </div>
-                </div><!-- /row -->
-                <div class="row">
-                  <div class="col-lg-12 required">
-                    <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
-                  </div>
-                </div><!-- /row -->
-                <div class="col-lg-12 required">
-                    <%= f.submit class: 'btn btn-info btn-lg btn-block' %>
-                  </div>
-                </div>
-
-              <% end %>
-        </div><!-- /content -->
-        </div><!-- /inner -->
-      </section><!-- /section -->
-
-
-    </div>
-<!--     <footer>
-      <div class="container">
-
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 socials">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-google-plus-square"></i></a>
+<section class="platinum-sponsors">
+            
+            <%# @images.each do |image| %>
+            <%#= image_tag "samples/logos/platinum/#{File.basename(path)}" %>
+            <%# end %>
+            
+  <div class="sponsors-container platinum">
+    <h3>
+    Platinum Sponsors
+    </h3>
+    <hr>
+    <%= link_to 'http://www.uteeni.com' do %>
+    <%= image_tag 'samples/logos/platinum/uteeni.png', :style => "height: 120px" %>
+    <% end %>
+    <%= link_to 'https://www.omise.co' do %>
+    <%= image_tag 'samples/logos/platinum/omise.png', :style => "height: 70px" %>
+    <% end %>
+    <%= link_to 'http://www.playlab.com' do %>
+    <%= image_tag 'samples/logos/platinum/pocket-play.png', :style => "height: 70px" %>
+    <% end %>
+    <%= link_to 'http://www.oozou.com' do %>
+    <%= image_tag 'samples/logos/platinum/oozou.png', :style => "height: 60px" %>
+    <% end %>
+    <%= link_to 'http://hubbathailand.com' do %>
+    <%= image_tag 'samples/logos/platinum/hubba.png' %>
+    <% end %>
+    <%= link_to 'http://angel.co' do %>
+    <%= image_tag 'samples/logos/platinum/angellist.png', :style => "height: 50px" %>
+    <% end %>
+  </div>
+  <div class="sponsors-container gold">
+    <h3>
+    Gold Sponsors
+    </h3>
+    <hr style="margin-bottom: 60px;">
+    <%= link_to 'https://www.techinasia.com' do %>
+    <%= image_tag 'samples/logos/platinum/tech.png', :style => "height: 60px"  %>
+    <% end %>
+    <%= link_to 'http://www.e27.co' do %>
+    <%= image_tag 'samples/logos/platinum/e27.png', :style => "height: 60px" %>
+    <% end %>
+    <%= link_to 'http://www.github.com' do %>
+    <%= image_tag 'samples/logos/platinum/github.png' %>
+    <% end %>
+    <%= link_to 'http://www.findyourspace.co/' do %>
+    <%= image_tag 'samples/logos/platinum/find-your-space.png' %>
+    <% end %>
+    <%= link_to 'https://aws.amazon.com' do %>
+    <%= image_tag 'samples/logos/platinum/amazonWS.png' %>
+    <% end %>
+    <%= link_to 'https://www.page365.net' do %>
+    <%= image_tag 'samples/logos/platinum/Page365.png', :style => "height: 60px" %>
+    <% end %>
+  </div>
+  <div class="sponsors-container silver">
+    <h3>
+    Silver Sponsors
+    </h3>
+    <hr style="margin-bottom: 42px;">
+    <%= link_to 'https://github.com/nimbl3/our-team/tree/master/openings' do %>
+    <%= image_tag 'samples/logos/platinum/nimble.png', :style => "height: 40px" %>
+    <% end %>
+    <%= link_to 'https://www.facebook.com/DrinkentrepreneurBangkok' do %>
+    <%= image_tag 'samples/logos/platinum/drink.png', :style => "height: 120px" %>
+    <% end %>
+    <%= link_to 'http://getlinks.co' do %>
+    <%= image_tag 'samples/logos/platinum/links.png', :style => "height: 100px" %>
+    <% end %>
+  </div>
+</section>
+<section class="about-section">
+  <div class="statement">
+    <center>
+    <h1 class="about-header">
+    About
+    </h1>
+    </center>
+    <%= @info.about.html_safe %>
+  </div>
+</section>
+<section class="section" id="speakers">
+  <div class="inner-bt">
+    <div class="content">
+      <h1>Speakers</h1>
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/ben.png' %>
+            <h2>Benjamin Fauchald</h2>
+            <div>Uteeni</div>
+          </div>
         </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">              
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="typo.html">Typography</a></li>
-            <li><a href="forms.html">Forms</a></li>
-            <li><a href="table.html">Tables</a></li>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/zack.png' %>
+            <h2>Sakchai "Zack" Siripanyawuth</h2>
+            <div>Codemy / CTO Uteeni</div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/blank.jpg' %>
+            <h2>TBA</h2>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/blank.jpg' %>
+            <h2>TBA</h2>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/blank.jpg' %>
+            <h2>TBA</h2>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div class="speaker">
+            <%= image_tag 'samples/blank.jpg' %>
+            <h2>TBA</h2>
+          </div>
+        </div>
+      </div><!-- /row -->         
+    </div><!-- /content -->
+  </div><!-- /inner -->
+</section><!-- /section -->
+<div class="section alt" id="schedule">
+  <div class="inner">
+    <div class="content">
+      <h1>Schedule</h1>
+      <div id="event-schedule" class="carousel slide">
+        <div>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#event-schedule" data-slide-to="0">26th of August</li>
+          </ol>
+        </div>
+                          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <h2 class="schedule-day">26th of August, 2015</h2>
+              <div class="schedule">
+                <div class="tentative">
+                  <div class="row">
+                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                      <%= image_tag 'samples/Ask-the-Truth-question-mark.jpg' %>
+                    </div>
+                    <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                      <div class="time">TBA</div>
+                      <h4>To be announced</h4>
+                    </div>
+                  </div>
+                  </div><!-- /tentative -->
+                <div class="tentative">
+                  <div class="row">
+                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                      <%= image_tag 'samples/Ask-the-Truth-question-mark.jpg' %>
+                    </div>
+                    <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                      <div class="time">TBA</div>
+                      <h4>To be announced<span></span></h4>
+                      <p><span>
+                      </span></p>
+                      <p class="summary">
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /tentative -->
+              </div><!-- /schedule -->
+            </div>
+          </div>
+        </div>
+      </div><!-- /content -->
+    </div><!-- /inner -->
+  </div>
+<section class="section" id="venue">
+  <div class="inner-bt">
+    <div class="content">
+      <h1>Venue</h1>
+      <h2>Pocket Play Labs</h2>
+      <h3>Bangkok, Thailand</h3>
+      </div><!-- /content -->
+      </div><!-- /inner -->
+</section><!-- /section -->
+<section class="map">
+  <div class="map-canvas">
+    <iframe width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Bangkok%2BPocket%2BPlay%2BLabs&ie=UTF8&z=15&t=m&iwloc=near&output=embed"></iframe>
+  </div>
+</section>
+  <div class="section alt" id="sponsors">
+    <div class="inner">
+      <div class="content">
+        <h1>Sponsors</h1>
+        <div class="statement">
+          <%= @info.sponsors.html_safe %>
+        </div>
+      </div><!-- /content -->
+    </div><!-- /inner -->
+</section><!-- /section -->
+<section class="section" id="register">
+  <div class="inner-bt">
+    <div class="content">
+      <h1>Free Registration</h1>
+      <div class="row content" id="form-container">
+        <%= form_for(@attendee, remote: true, :html => {:id => "attendenceForm"}) do |f| %>
+        <% if @attendee.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@attendee.errors.count, "error") %> prohibited this attendee from being saved:</h2>
+          <ul>
+            <% @attendee.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
           </ul>
         </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copyright">
-          &copy; Expert Conference 2013
-        </div>
-      </div>
-    </footer> -->
+        <% end %>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+            <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+            <%= f.text_field :last_name, class: 'form-control', placeholder: 'Last Name' %>
+          </div>
+          </div><!-- /row -->
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+              <%= f.text_field :occupation, class: 'form-control', placeholder: 'Occupation' %>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 required">
+              <%= f.text_field :phone_number, class: 'form-control', placeholder: 'Phone Number' %>
+            </div>
+            </div><!-- /row -->
+            <div class="row">
+              <div class="col-lg-12 required">
+                <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+              </div>
+              <div class="col-lg-12 required">
+                <%= f.submit class: 'btn btn-info btn-lg btn-block' %>
+              </div>
+            </div>
+            <% end %>
+      </div><!-- /inner -->
+    </section><!-- /section -->
+                                                   
