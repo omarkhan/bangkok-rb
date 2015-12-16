@@ -1,0 +1,36 @@
+#!/bin/bash
+set -e
+
+# cd to /vagrant on login
+if [[ $USER == 'vagrant' ]]; then
+  grep -Fq 'cd /vagrant' ~/.bashrc || echo 'cd /vagrant' >> ~/.bashrc
+  cd /vagrant
+fi
+
+# Install system packages
+sudo apt-add-repository -y ppa:brightbox/ruby-ng
+sudo apt-get update --quiet
+sudo apt-get install -y --quiet git ruby2.2 ruby2.2-dev postgresql libpq-dev nodejs
+
+# Install gems
+sudo gem install bundler
+bundle install
+
+# Create postgres user
+sudo -u postgres createuser -d $USER ||
+  echo "Could not create postgres user '$USER' - it probably already exists"
+
+# Allow access to postgres from localhost without password
+cat << EOF | sudo tee /etc/postgresql/9.3/main/pg_hba.conf
+local   all             postgres                                peer
+local   all             all                                     trust
+host    all             all             127.0.0.1/32            trust
+host    all             all             ::1/128                 trust
+EOF
+sudo service postgresql restart
+
+# Create postgres databases
+for database in devcon devcon_test; do
+  createdb --encoding utf-8 --template template0 $database ||
+    echo "Could not create database '$database' - it probably already exists"
+done
